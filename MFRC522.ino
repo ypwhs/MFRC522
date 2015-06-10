@@ -3,6 +3,7 @@
 #define uchar unsigned char
 #define uint unsigned int
 #define beep 6
+#define beeptime 40
 
 //D5     <------------->             RST    (这个脚不接貌似也可以)
 //D10    <------------->             SDA   (在RC522中即为CS)
@@ -151,7 +152,7 @@ void loop()
     return;
   }
   // Show card type
-  //ShowCardType(str);
+  ShowCardType(str);
 
   //Prevent conflict, return the 4 bytes Serial number of the card
   status = MFRC522_Anticoll(str);
@@ -169,15 +170,15 @@ void loop()
       uchar* id = serNum;
       for (i = 0; i < 2; i++) {
         digitalWrite(beep, 1);
-        delay(100);
+        delay(beeptime);
         digitalWrite(beep, 0);
-        delay(100);
+        delay(200-beeptime);
       }
     }
   }
 
   MFRC522_Halt(); //command the card into sleep mode
-  delay(1000);
+  delay(100);
 }
 
 /*
