@@ -2,8 +2,7 @@
 #include <string.h>
 #define uchar unsigned char
 #define uint unsigned int
-#define beep A0
-#define mada 3
+#define beep 6
 
 //D5     <------------->             RST    (这个脚不接貌似也可以)
 //D10    <------------->             SDA   (在RC522中即为CS)
@@ -128,14 +127,13 @@ uchar serNum[5];
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   SPI.begin();
 
   pinMode(chipSelectPin, OUTPUT); // Set digital pin 10 as OUTPUT to connect it to the RFID /ENABLE pin
   digitalWrite(chipSelectPin, LOW); // Activate the RFID reader
   pinMode(NRSTPD, OUTPUT); // Set digital pin 5 , Not Reset and Power-down
-  pinMode(mada, OUTPUT);
   pinMode(beep, OUTPUT);
   MFRC522_Init();
 }
