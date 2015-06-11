@@ -91,7 +91,7 @@
 
 我们在这里写下两行代码:
 
-```C#
+```
 Control.CheckForIllegalCrossThreadCalls = false;
 serialPort1.Open();
 ```
@@ -106,7 +106,7 @@ serialPort1.Open();
 
 我们可以写下如下代码
 
-```C#
+```
 String rfid = serialPort1.ReadLine();
 label1.Text = rfid;
 ```
@@ -134,7 +134,7 @@ label1.Text = rfid;
 
 我们就门禁系统举一个例子:
 
-```C#
+```
 if(rfid == "3004A2DD"){
 	kaimen();
 }
