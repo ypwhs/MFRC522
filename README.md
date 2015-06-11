@@ -91,8 +91,9 @@
 
 我们在这里写下两行代码:
 
-```
-Control.CheckForIllegalCrossThreadCalls = false;serialPort1.Open();
+```C#
+Control.CheckForIllegalCrossThreadCalls = false;
+serialPort1.Open();
 ```
 
 然后我们从窗口中拖出一个**Label**,用来显示我们读到的卡号.
@@ -105,8 +106,9 @@ Control.CheckForIllegalCrossThreadCalls = false;serialPort1.Open();
 
 我们可以写下如下代码
 
-```
-String rfid = serialPort1.ReadLine();label1.Text = rfid;
+```C#
+String rfid = serialPort1.ReadLine();
+label1.Text = rfid;
 ```
 
 然后按`F5`运行
@@ -132,7 +134,7 @@ String rfid = serialPort1.ReadLine();label1.Text = rfid;
 
 我们就门禁系统举一个例子:
 
-```
+```C#
 if(rfid == "3004A2DD"){
 	kaimen();
 }
