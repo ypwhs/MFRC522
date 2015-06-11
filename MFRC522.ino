@@ -152,7 +152,7 @@ void loop()
     return;
   }
   // Show card type
-  ShowCardType(str);
+  //ShowCardType(str);
 
   //Prevent conflict, return the 4 bytes Serial number of the card
   status = MFRC522_Anticoll(str);
@@ -194,7 +194,7 @@ void ShowCardID(uchar *id)
     Serial.print(0x0F & (id[i] >> 4), HEX);
     Serial.print(0x0F & id[i], HEX);
   }
-  Serial.println("");
+  //Serial.println("");
 }
 
 /*
