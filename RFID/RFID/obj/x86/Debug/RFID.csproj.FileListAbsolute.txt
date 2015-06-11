@@ -1,0 +1,9 @@
+\\psf\Home\Desktop\MFRC522\RFID\RFID\bin\Debug\RFID.exe
+\\psf\Home\Desktop\MFRC522\RFID\RFID\bin\Debug\RFID.pdb
+\\psf\Home\Desktop\MFRC522\RFID\RFID\obj\x86\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Desktop\MFRC522\RFID\RFID\obj\x86\Debug\RFID.Form1.resources
+\\psf\Home\Desktop\MFRC522\RFID\RFID\obj\x86\Debug\RFID.Properties.Resources.resources
+\\psf\Home\Desktop\MFRC522\RFID\RFID\obj\x86\Debug\GenerateResource.read.1.tlog
+\\psf\Home\Desktop\MFRC522\RFID\RFID\obj\x86\Debug\GenerateResource.write.1.tlog
+\\psf\Home\Desktop\MFRC522\RFID\RFID\obj\x86\Debug\RFID.exe
+\\psf\Home\Desktop\MFRC522\RFID\RFID\obj\x86\Debug\RFID.pdb
