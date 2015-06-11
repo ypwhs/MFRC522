@@ -194,7 +194,7 @@ void ShowCardID(uchar *id)
     Serial.print(0x0F & (id[i] >> 4), HEX);
     Serial.print(0x0F & id[i], HEX);
   }
-  //Serial.println("");
+  Serial.println("");
 }
 
 /*

@@ -20,7 +20,7 @@
 
 | RC522 | Arduino |
 |------:|:--------|
-| SDA	| D9	|
+| SDA	| D10	|
 | SCK	| D13	|
 | MOSI	| D11	|
 | MISO	| D12	|
